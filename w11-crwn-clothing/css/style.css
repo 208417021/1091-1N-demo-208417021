@@ -194,6 +194,23 @@ a {
   height: 320px;
 }
 
+.directory-menu .menu-item:hover {
+  cursor: pointer;
+}
+
+.directory-menu .menu-item:hover .background-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: -webkit-transform 6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 6s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.directory-menu .menu-item:hover .content {
+  opacity: 1.0;
+}
+
 .directory-menu .menu-item .background-image {
   width: 100%;
   height: 100%;
@@ -240,5 +257,43 @@ a {
   font-size: 20px;
   font-weight: bold;
   color: gray;
+}
+
+.shop-page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shop-page .title {
+  text-align: center;
+}
+
+.shop-page .collection-page {
+  width: 100%;
+}
+
+.shop-page .collection-page .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop-page .collection-page .items .collection-item {
+  margin: 5px;
+}
+
+.shop-page .collection-page .items .collection-item img {
+  width: 250px;
+  height: 280px;
 }
 /*# sourceMappingURL=style.css.map */
