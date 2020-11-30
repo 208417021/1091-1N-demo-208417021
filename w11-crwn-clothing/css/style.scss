@@ -137,47 +137,47 @@ a {
     overflow: hidden;
     margin: 7px;
     border: 1px solid black;
-  }
   
-  &.large{
-    height: 320px;
-    
-  }
-
-  .background-image{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  & img{
-    object-fit: cover;
-    width: 100%;
-    height: 240px;
-  }
-
-  .content{
-    height: 90px;
-    border: 1px solid black;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background-color: white;
-    opacity: 0.5;
-  
-    .title{
-      font-size: 20px;
-      font-weight: bold;
-      color: gray;
+    &.large{
+      height: 320px;
+      
     }
   
-    .subtitle{
-      font-size: 20px;
-      font-weight: bold;
-      color: gray;
+    .background-image{
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+    & img{
+      object-fit: cover;
+      width: 100%;
+      height: 240px;
+    }
+  
+    .content{
+      height: 90px;
+      border: 1px solid black;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background-color: white;
+      opacity: 0.5;
+    
+      .title{
+        font-size: 20px;
+        font-weight: bold;
+        color: gray;
+      }
+    
+      .subtitle{
+        font-size: 20px;
+        font-weight: bold;
+        color: gray;
+      }
     }
   }
 }

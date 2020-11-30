@@ -190,25 +190,25 @@ a {
   border: 1px solid black;
 }
 
-.directory-menu.large {
+.directory-menu .menu-item.large {
   height: 320px;
 }
 
-.directory-menu .background-image {
+.directory-menu .menu-item .background-image {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
 }
 
-.directory-menu img {
+.directory-menu .menu-item img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 240px;
 }
 
-.directory-menu .content {
+.directory-menu .menu-item .content {
   height: 90px;
   border: 1px solid black;
   padding: 0 20px;
@@ -230,13 +230,13 @@ a {
   opacity: 0.5;
 }
 
-.directory-menu .content .title {
+.directory-menu .menu-item .content .title {
   font-size: 20px;
   font-weight: bold;
   color: gray;
 }
 
-.directory-menu .content .subtitle {
+.directory-menu .menu-item .content .subtitle {
   font-size: 20px;
   font-weight: bold;
   color: gray;
