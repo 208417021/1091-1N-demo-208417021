@@ -1,0 +1,85 @@
+@import 'config';
+.bg{
+    &-dark {
+        background-color: black;
+    }
+}
+
+.btn{
+    display: inline-block;
+    // background: #fff;
+    color: cornflowerblue;
+    text-decoration: none;
+    padding: 0.3rem 1.2rem;
+    font-size: 1.2rem;
+    transition: all 0.1s ease-in;
+    &:hover{
+
+    }
+
+    &.btn-primary{
+        // background: cyan;
+        @include set-background($primary-color);
+        &:hover{
+            background: lighten($success-color, 5%);
+        }
+    }
+
+    &.btn-danger{
+        // @include set-background($danger-color);
+        border: 2px solid $danger-color;
+        border-radius: 10px;
+        &:hover{
+            background: lighten($danger-color, 5%);
+            color: #fff;
+        }
+    }
+
+    &.btn-light{
+        // background: darkgrey;
+        // @include set-background($light-color);
+        border: 2px solid $light-color;
+        border-radius: 10px;
+        &:hover{
+            background: lighten($light-color, 5%);
+            color: #000;
+        }
+    }
+    &.btn-success{
+        // background: darkgrey;
+        // @include set-background(#fff);
+        // opacity: 0;
+        border: 2px solid $success-color;
+        border-radius: 10px;
+        &:hover{
+            background: lighten($success-color, 5%);
+            color: #fff;
+        }
+    }
+}
+
+.dark-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.x-large{
+    font-size: 4.0rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.lead{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.large{
+    font-size: 3.0rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,19 @@
+$primary-color: aqua;
+$gray-color: darkgrey;
+$success-color: green;
+$light-color: #fff;
+$danger-color: red;
+
+
+@function set-text-color($color){ //SCSS syntex
+    @if(lightness($color) > 60){ //color degree
+        @return #333;
+    }@else{
+        @return darkseagreen;
+    }
+}
+
+@mixin set-background($color){
+    background: $color;
+    color: set-text-color($color);
+}
